@@ -3,8 +3,10 @@
 <struts>
 	<constant name="strtus.devMode" value="true"></constant>
 	<package name="com.divworksdev.webproj.action" extends="struts-default">
-		<action name="HelloStrutsAction" class="com.diworksdev"></action>
+		<action name="HelloStrutsAction" class="com.diworksdev.webproj2.action.HelloStrutsAction" method="excecute">
+			<result name="success">hello.jsp</result>
+			<result name="error">helloStrutsError.jsp</result>
+		</action>
 	</package>
-
 
 </struts>
